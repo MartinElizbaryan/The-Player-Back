@@ -13,3 +13,12 @@ export const getAllUsers = async (req, res, next) => {
         next(error)
     }
 }
+
+export const findMe = async (req, res, next) => {
+    try {
+      const result = await db.findMeDB(req.auth.id)
+      res.json(result)
+    } catch (error) {
+      next(error)
+    }
+  }

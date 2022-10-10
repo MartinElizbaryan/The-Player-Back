@@ -29,3 +29,23 @@ export const getAllUsersDB = async ({ type="id", take, skip=0 }) => {
       }
     }
   }
+
+  export const findMeDB = async (id) => {
+    try {
+      const foundUser = await user.findUnique({
+        where: {
+          id: +id,
+        },
+        include: {
+          team: true
+        },
+      })
+      return {
+        user: foundUser,
+      }
+    } catch (error) {
+      return {
+        error,
+      }
+    }
+  }

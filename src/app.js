@@ -5,6 +5,7 @@ import cookieParser from "cookie-parser";
 import appRoutes from './routes.js'
 import notFoundErrorCreator from './errors/notFoundErrorCreator.js'
 import internalServerErrorCreator from './errors/internalServerErrorCreator.js'
+import { verifyToken } from "./helpers/auth.js";
 
 const app = express();
 
@@ -22,6 +23,16 @@ app.use(
     })
 )
 
+app.use((req, res, next) => {
+    const token = req.headers.authorization?.split(" ")[1]
+    const payload = verifyToken(token)
+    if (payload) {
+      const { id, is_admin } = payload
+      req.auth = { id, is_admin }
+    }
+    next()
+})
+
 app.use(logger("dev" /*, { skip: (req, res) => res.statusCode < 400 }*/))
 
 app.set("port", process.env.PORT || 5000)
@@ -37,7 +48,6 @@ app.use((req, res, next) => {
 
 // handle errors
 app.use((err, req, res, next) => {
-    console.log(111111111111)
     console.log(err)
     const error = err.status ? err : internalServerErrorCreator()
     const status = err.status || 500
