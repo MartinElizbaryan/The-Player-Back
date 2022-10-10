@@ -1,0 +1,41 @@
+{
+  "type": "module",
+  "devDependencies": {
+    "dotenv": "^16.0.3",
+    "eslint": "^8.25.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.7.1",
+    "prisma": "^4.4.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.4.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "joi": "^17.6.2",
+    "morgan": "^1.10.0"
+  },
+  "name": "server",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon -r dotenv/config src/index.js"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MartinElizbaryan/The-Player-Back.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MartinElizbaryan/The-Player-Back/issues"
+  },
+  "homepage": "https://github.com/MartinElizbaryan/The-Player-Back#readme"
+}

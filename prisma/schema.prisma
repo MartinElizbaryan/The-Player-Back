@@ -1,0 +1,107 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+
+model User {
+  id              Int         @id @default(autoincrement())
+  username        String      @db.VarChar(50)
+  email           String      @unique @db.VarChar(320)
+  password        String
+  money           Int         @default(5000)
+  gold            Int         @default(0)
+  points          Int         @default(10)
+  points_to_get   Int         @default(0)
+  positionPlayer  Position?
+
+  // Team
+  is_capitan      Boolean     @default(false)
+  is_playing      Boolean     @default(false)
+  team_id         Int?
+  team            Team?        @relation(fields: [team_id], references: [id], onDelete: Cascade)
+
+  // Player
+  games           Int         @default(0)
+  goals           Int         @default(0)
+  assists         Int         @default(0)
+  deffends        Int         @default(0)
+  clean_sheets    Int         @default(0)
+  power           Int         @default(25)
+
+  // Auth
+  is_admin        Boolean     @default(false)
+  is_verified     Boolean     @default(false)
+  is_robot        Boolean     @default(false)
+
+  // Gift & Gold
+  gifts           Int         @default(1)
+  is_taken_gift   Boolean     @default(false)
+  purchases       Int         @default(0)
+  is_bought       Boolean     @default(false)
+  
+  // All Field
+  penalty         Int         @default(5)
+  
+  // Goalkeeper 
+  reaction        Int         @default(5)
+  jumping         Int         @default(5)
+  penalty_def     Int         @default(5)
+  
+  // Defender
+  interceptions   Int         @default(5)
+  head_boatle     Int         @default(5)
+
+  // Middle Field
+  pass            Int         @default(5)
+  pass_long       Int         @default(5)
+  shot_long       Int         @default(5)
+  vision          Int         @default(5)
+
+  // Forward
+  dribbling       Int         @default(5)
+  shot            Int         @default(5)
+  shot_power      Int         @default(5)
+  
+  // Defender & Forward
+  speed_sprint    Int         @default(5)
+
+  // Defender & Goalkeeper
+  position        Int         @default(5)
+
+  // Timing
+  created_at      DateTime    @default(now())
+  updated_at      DateTime    @default(now()) @updatedAt
+}
+
+model Team {
+  id              Int         @id @default(autoincrement())
+  name            String      @unique @db.VarChar(30)
+  users           User[]
+
+  games           Int         @default(0)
+  wins            Int         @default(0)
+  draws           Int         @default(0)
+  loses           Int         @default(0)
+  goals           Int         @default(0)
+  power           Int         @default(0)
+  power11         Int         @default(0)
+  points          Int         @default(0)
+
+  created_at      DateTime    @default(now())
+  updated_at      DateTime    @default(now()) @updatedAt
+}
+
+enum Position {
+  gk
+  df
+  mf
+  fw
+}
