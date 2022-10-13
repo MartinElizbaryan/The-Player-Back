@@ -1,4 +1,5 @@
 import { PrismaClient } from "@prisma/client"
+import { hashPassword } from "../src/helpers/auth.js"
 
 const prisma = new PrismaClient()
 
@@ -11,12 +12,12 @@ async function main() {
   await prisma.team.upsert(manCity)
 
   await prisma.user.upsert({
-      where: { email: "ibrahimovich@gmail.com" },
+      where: { email: "ibra@gmail.com" },
       update: {},
       create: {
-          email: "ibrahimovich@gmail.com",
+          email: "ibra@gmail.com",
           username: "Ibrahimović",
-          password: "12345678"
+          password: await hashPassword("qweqweqwe")
       },
   })
 }
