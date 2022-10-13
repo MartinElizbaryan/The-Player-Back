@@ -17,6 +17,7 @@ const liverpool = {
         name: "Liverpool",
         power: 944,
         power11: 944,
+        color: "#ff0000",
         users: {
             create: [
                 allison,

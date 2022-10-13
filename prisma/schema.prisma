@@ -84,6 +84,7 @@ model User {
 model Team {
   id              Int         @id @default(autoincrement())
   name            String      @unique @db.VarChar(30)
+  color           String      @db.VarChar(7) @default("#000000")
   users           User[]
 
   games           Int         @default(0)

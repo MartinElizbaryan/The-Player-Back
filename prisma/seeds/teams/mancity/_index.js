@@ -17,6 +17,7 @@ const liverpool = {
         name: "Manchester City",
         power: 952,
         power11: 952,
+        color: "#00caff",
         users: {
             create: [
                 ederson,
