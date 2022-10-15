@@ -9,17 +9,17 @@ const robertson = {
     is_playing: true,
 
     // Player
-    power: 85,
+    power: 86,
 
     // Auth
     is_robot: true,
 
     // All Field
-    penalty: 77,
+    penalty: 55,
     interceptions: 87,
     head_boatle: 82,
-    speed_sprint: 87,
-    position: 90
+    speed_sprint: 84,
+    position: 91
 }
 
 export default robertson

@@ -9,17 +9,17 @@ const fabinho = {
     is_playing: true,
 
     // Player
-    power: 86,
+    power: 87,
 
     // Auth
     is_robot: true,
 
     // All Field
-    penalty: 91,
-    pass: 87,
-    pass_long: 85,
-    shot_long: 82,
-    vision: 86,
+    penalty: 90,
+    pass: 88,
+    pass_long: 83,
+    shot_long: 85,
+    vision: 90,
 }
 
 export default fabinho

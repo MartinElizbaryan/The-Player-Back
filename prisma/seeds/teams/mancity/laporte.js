@@ -9,17 +9,17 @@ const laporte = {
     is_playing: true,
 
     // Player
-    power: 86,
+    power: 85,
 
     // Auth
     is_robot: true,
 
     // All Field
-    penalty: 45,
-    interceptions: 85,
-    head_boatle: 88,
-    speed_sprint: 84,
-    position: 88
+    penalty: 44,
+    interceptions: 87,
+    head_boatle: 84,
+    speed_sprint: 80,
+    position: 89
 }
 
 export default laporte

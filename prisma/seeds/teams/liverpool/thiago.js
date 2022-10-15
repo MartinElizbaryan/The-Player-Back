@@ -15,11 +15,11 @@ const tiago = {
     is_robot: true,
 
     // All Field
-    penalty: 79,
-    pass: 92,
-    pass_long: 90,
+    penalty: 75,
+    pass: 91,
+    pass_long: 89,
     shot_long: 77,
-    vision: 90,
+    vision: 88,
 }
 
 export default tiago

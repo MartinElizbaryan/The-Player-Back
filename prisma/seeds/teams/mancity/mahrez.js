@@ -9,17 +9,17 @@ const mahrez = {
     is_playing: true,
 
     // Player
-    power: 89,
+    power: 85,
 
     // Auth
     is_robot: true,
 
     // All Field
-    penalty: 86,
-    dribbling: 90,
-    shot: 93,
-    shot_power: 85,
-    speed_sprint: 91,
+    penalty: 80,
+    dribbling: 91,
+    shot: 84,
+    shot_power: 84,
+    speed_sprint: 80,
 }
 
 export default mahrez

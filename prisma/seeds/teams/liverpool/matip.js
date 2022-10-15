@@ -15,11 +15,11 @@ const matip = {
     is_robot: true,
 
     // All Field
-    penalty: 70,
-    interceptions: 85,
+    penalty: 42,
+    interceptions: 84,
     head_boatle: 89,
-    speed_sprint: 88,
-    position:86
+    speed_sprint: 79,
+    position:85
 }
 
 export default matip

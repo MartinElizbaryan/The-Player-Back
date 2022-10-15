@@ -1,5 +1,5 @@
 const rodri = {
-    username: "	Rodri",
+    username: "Rodri",
     email: "rodri@gmail.com",
     password: "awdtfawghauwijajwuv",
     positionPlayer: "mf",
@@ -15,10 +15,10 @@ const rodri = {
     is_robot: true,
 
     // All Field
-    penalty: 91,
-    pass: 87,
-    pass_long: 85,
-    shot_long: 82,
+    penalty: 46,
+    pass: 86,
+    pass_long: 83,
+    shot_long: 87,
     vision: 86,
 }
 

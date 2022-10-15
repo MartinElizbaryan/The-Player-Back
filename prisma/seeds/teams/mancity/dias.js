@@ -16,10 +16,10 @@ const dias = {
 
     // All Field
     penalty: 45,
-    interceptions: 90,
-    head_boatle: 86,
-    speed_sprint: 88,
-    position:89
+    interceptions: 89,
+    head_boatle: 88,
+    speed_sprint: 80,
+    position:93
 }
 
 export default dias

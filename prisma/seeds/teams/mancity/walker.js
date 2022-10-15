@@ -9,17 +9,17 @@ const walker = {
     is_playing: true,
 
     // Player
-    power: 84,
+    power: 85,
 
     // Auth
     is_robot: true,
 
     // All Field
-    penalty: 84,
-    interceptions: 81,
-    head_boatle: 83,
-    speed_sprint: 83,
-    position: 87
+    penalty: 63,
+    interceptions: 82,
+    head_boatle: 74,
+    speed_sprint: 94,
+    position: 88
 }
 
 export default walker

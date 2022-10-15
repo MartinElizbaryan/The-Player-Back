@@ -9,17 +9,17 @@ const arnold = {
     is_playing: true,
 
     // Player
-    power: 86,
+    power: 87,
 
     // Auth
     is_robot: true,
 
     // All Field
-    penalty: 85,
+    penalty: 55,
     interceptions: 87,
-    head_boatle: 82,
-    speed_sprint: 84,
-    position: 91
+    head_boatle: 81,
+    speed_sprint: 86,
+    position: 93
 }
 
 export default arnold

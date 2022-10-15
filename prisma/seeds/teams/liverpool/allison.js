@@ -15,11 +15,11 @@ const allison = {
     is_robot: true,
 
     // All Field
-    penalty: 85,
-    reaction: 88,
-    jumping: 89,
-    penalty_def: 90,
-    position: 93
+    penalty: 23,
+    reaction: 91,
+    jumping: 92,
+    penalty_def: 82,
+    position: 89
 }
 
 export default allison

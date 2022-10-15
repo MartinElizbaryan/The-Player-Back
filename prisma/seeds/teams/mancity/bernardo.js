@@ -9,16 +9,16 @@ const bernardo = {
     is_playing: true,
 
     // Player
-    power: 86,
+    power: 87,
 
     // Auth
     is_robot: true,
 
     // All Field
-    penalty: 79,
-    pass: 92,
-    pass_long: 90,
-    shot_long: 77,
+    penalty: 68,
+    pass: 89,
+    pass_long: 80,
+    shot_long: 89,
     vision: 90,
 }
 

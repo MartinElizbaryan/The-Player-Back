@@ -9,7 +9,7 @@ const salah = {
     is_playing: true,
 
     // Player
-    power: 89,
+    power: 90,
 
     // Auth
     is_robot: true,

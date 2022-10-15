@@ -1,5 +1,5 @@
 const cancelo = {
-    username: "	João Cancelo",
+    username: "João Cancelo",
     email: "cancelo@gmail.com",
     password: "aukguakwdkuawgdkuaw",
     positionPlayer: "df",
@@ -15,11 +15,11 @@ const cancelo = {
     is_robot: true,
 
     // All Field
-    penalty: 10,
+    penalty: 52,
     interceptions: 85,
-    head_boatle: 83,
-    speed_sprint: 88,
-    position: 91
+    head_boatle: 81,
+    speed_sprint: 87,
+    position: 93
 }
 
 export default cancelo

@@ -9,17 +9,17 @@ const haaland = {
     is_playing: true,
 
     // Player
-    power: 89,
+    power: 90,
 
     // Auth
     is_robot: true,
 
     // All Field
-    penalty: 78,
-    dribbling: 85,
-    shot: 91,
-    shot_power: 89,
-    speed_sprint: 91,
+    penalty: 76,
+    dribbling: 78,
+    shot: 94,
+    shot_power: 93,
+    speed_sprint: 94,
 }
 
 export default haaland

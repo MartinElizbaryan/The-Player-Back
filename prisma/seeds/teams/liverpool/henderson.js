@@ -9,13 +9,13 @@ const henderson = {
     is_playing: true,
 
     // Player
-    power: 83,
+    power: 84,
 
     // Auth
     is_robot: true,
 
     // All Field
-    penalty: 76,
+    penalty: 64,
     pass: 85,
     pass_long: 87,
     shot_long: 83,

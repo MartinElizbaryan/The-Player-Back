@@ -9,17 +9,17 @@ const vandijk = {
     is_playing: true,
 
     // Player
-    power: 89,
+    power: 91,
 
     // Auth
     is_robot: true,
 
     // All Field
-    penalty: 85,
+    penalty: 62,
     interceptions: 90,
     head_boatle: 87,
     speed_sprint: 91,
-    position: 91
+    position: 94
 }
 
 export default vandijk

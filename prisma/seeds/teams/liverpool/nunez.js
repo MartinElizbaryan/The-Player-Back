@@ -9,14 +9,14 @@ const nunez = {
     is_playing: true,
 
     // Player
-    power: 83,
+    power: 84,
 
     // Auth
     is_robot: true,
 
     // All Field
     penalty: 78,
-    dribbling: 81,
+    dribbling: 79,
     shot: 83,
     shot_power: 86,
     speed_sprint: 89,

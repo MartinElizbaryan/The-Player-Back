@@ -15,11 +15,11 @@ const ederson = {
     is_robot: true,
 
     // All Field
-    penalty: 85,
-    reaction: 87,
-    jumping: 87,
-    penalty_def: 89,
-    position: 91
+    penalty: 51,
+    reaction: 90,
+    jumping: 89,
+    penalty_def: 83,
+    position: 88
 }
 
 export default ederson
