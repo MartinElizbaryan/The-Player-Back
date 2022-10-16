@@ -1,4 +1,4 @@
-const matip = {
+export default {
     username: "Joel Matip",
     email: "matip@gmail.com",
     password: "usefbuseyf7esgf7esf",
@@ -21,5 +21,3 @@ const matip = {
     speed_sprint: 79,
     position:85
 }
-
-export default matip

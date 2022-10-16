@@ -1,4 +1,4 @@
-const salah = {
+export default {
     username: "Mohamed Salah",
     email: "salah@gmail.com",
     password: "ugfuyfttstsi",
@@ -21,5 +21,3 @@ const salah = {
     shot_power: 85,
     speed_sprint: 91,
 }
-
-export default salah

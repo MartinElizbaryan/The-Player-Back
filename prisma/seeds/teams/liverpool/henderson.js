@@ -1,4 +1,4 @@
-const henderson = {
+export default {
     username: "Jordan Henderson",
     email: "henderson@gmail.com",
     password: "awdtfawghauwijajwuv",
@@ -21,5 +21,3 @@ const henderson = {
     shot_long: 83,
     vision: 82,
 }
-
-export default henderson

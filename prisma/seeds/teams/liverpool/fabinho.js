@@ -1,4 +1,4 @@
-const fabinho = {
+export default {
     username: "Fabinho",
     email: "fabinho@gmail.com",
     password: "awdtfawghauwijajwuv",
@@ -21,5 +21,3 @@ const fabinho = {
     shot_long: 85,
     vision: 90,
 }
-
-export default fabinho

@@ -96,20 +96,26 @@ model Team {
   power11         Int         @default(0)
   points          Int         @default(0)
 
+  matches_home    Match[]   @relation("home")
+  matches_away    Match[]   @relation("away")
+
   created_at      DateTime    @default(now())
   updated_at      DateTime    @default(now()) @updatedAt
 }
 
-model Matches {
-    id              Int         @id @default(autoincrement())
-    team1_id        String      @unique @db.VarChar(30)
-    team1_goals     Int         @default(0)
-    team2_id        String      @unique @db.VarChar(30)
-    team2_goals     Int         @default(0)
-    is_finished     Boolean     @default(false)
+model Match {
+  id              Int         @id @default(autoincrement())
+  team1_id        Int
+  team1           Team        @relation("home", fields: [team1_id], references: [id])
+  team1_goals     Int         @default(0)
 
-    created_at      DateTime    @default(now())
-    updated_at      DateTime    @default(now()) @updatedAt
+  team2_id        Int
+  team2           Team        @relation("away", fields: [team2_id], references: [id])
+  team2_goals     Int         @default(0)
+  is_finished     Boolean     @default(false)
+
+  created_at      DateTime    @default(now())
+  updated_at      DateTime    @default(now()) @updatedAt
 }
 
 enum Position {

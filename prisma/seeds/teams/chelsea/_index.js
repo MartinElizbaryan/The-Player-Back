@@ -13,7 +13,7 @@ import mount from "./mount.js";
 import havertz from "./havertz.js";
 import sterling from "./sterling.js";
 
-const liverpool = {
+const chelsea = {
     where: { name: "Chelsea" },
     update: {},
     create: {
@@ -42,4 +42,4 @@ const liverpool = {
     },
 }
 
-export default liverpool
+export default chelsea

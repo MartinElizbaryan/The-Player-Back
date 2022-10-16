@@ -1,4 +1,4 @@
-const vandijk = {
+export default {
     username: "Virgil van Dijk",
     email: "vandijk@gmail.com",
     password: "aukguakwdkuawgdkuaw",
@@ -21,5 +21,3 @@ const vandijk = {
     speed_sprint: 91,
     position: 94
 }
-
-export default vandijk

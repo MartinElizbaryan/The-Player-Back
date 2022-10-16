@@ -1,4 +1,4 @@
-const depay = {
+export default {
     username: "Luis Díaz",
     email: "depay@gmail.com",
     password: "suekhfufhesuf",
@@ -21,5 +21,3 @@ const depay = {
     shot_power: 84,
     speed_sprint: 92,
 }
-
-export default depay

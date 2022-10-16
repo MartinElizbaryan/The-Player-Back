@@ -1,4 +1,4 @@
-const jong = {
+export default {
     username: "Fabinho",
     email: "jong@gmail.com",
     password: "awdtfawghauwijajwuv",
@@ -21,5 +21,3 @@ const jong = {
     shot_long: 82,
     vision: 86,
 }
-
-export default jong

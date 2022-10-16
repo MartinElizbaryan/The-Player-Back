@@ -1,4 +1,4 @@
-const lewa = {
+export default {
     username: "Darwin Núñez",
     email: "lewa@gmail.com",
     password: "suekhfufhesuf",
@@ -21,5 +21,3 @@ const lewa = {
     shot_power: 86,
     speed_sprint: 89,
 }
-
-export default lewa

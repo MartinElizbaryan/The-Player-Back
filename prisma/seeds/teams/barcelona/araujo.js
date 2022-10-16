@@ -1,5 +1,5 @@
-const araujo = {
-    username: "Trent Alexander-Arnold",
+export default {
+    username: "Ronald Araujo",
     email: "araujo@gmail.com",
     password: "ytytdtyju",
     positionPlayer: "df",
@@ -21,5 +21,3 @@ const araujo = {
     speed_sprint: 84,
     position: 91
 }
-
-export default araujo

@@ -1,4 +1,4 @@
-const allison = {
+export default {
     username: "Allison",
     email: "allison@gmail.com",
     password: "utyfygaoihwudfawgaw",
@@ -21,5 +21,3 @@ const allison = {
     penalty_def: 82,
     position: 89
 }
-
-export default allison

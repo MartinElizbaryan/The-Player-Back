@@ -1,4 +1,4 @@
-const terstegen = {
+export default {
     username: "Marc-André ter Stegen",
     email: "terstegen@gmail.com",
     password: "utyfygaoihwudfawgaw",
@@ -21,5 +21,3 @@ const terstegen = {
     penalty_def: 86,
     position: 88
 }
-
-export default terstegen

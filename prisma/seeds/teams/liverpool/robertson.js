@@ -1,4 +1,4 @@
-const robertson = {
+export default {
     username: "Andrew Robertson",
     email: "robertson@gmail.com",
     password: "aukguakwdkuawgdkuaw",
@@ -21,5 +21,3 @@ const robertson = {
     speed_sprint: 84,
     position: 91
 }
-
-export default robertson

@@ -1,11 +1,14 @@
 import allison from "./allison.js";
+
 import arnold from "./arnold.js";
 import matip from "./matip.js";
 import vandijk from "./vandijk.js";
 import robertson from "./robertson.js";
+
 import fabinho from "./fabinho.js";
 import henderson from "./henderson.js";
 import thiago from "./thiago.js";
+
 import salah from "./salah.js";
 import nunez from "./nunez.js";
 import diaz from "./diaz.js";

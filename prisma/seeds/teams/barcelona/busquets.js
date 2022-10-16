@@ -1,6 +1,6 @@
-const busquets = {
+export default {
     username: "Jordan Henderson",
-    email: "busq@gmail.com",
+    email: "busquets@gmail.com",
     password: "awdtfawghauwijajwuv",
     positionPlayer: "mf",
 
@@ -21,5 +21,3 @@ const busquets = {
     shot_long: 83,
     vision: 82,
 }
-
-export default busquets

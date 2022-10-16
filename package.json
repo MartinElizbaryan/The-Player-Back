@@ -17,6 +17,7 @@
     "express": "^4.18.1",
     "joi": "^17.6.2",
     "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
     "morgan": "^1.10.0",
     "yargs": "^16.0.1"
   },
@@ -25,9 +26,16 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node test.js",
     "start": "nodemon -r dotenv/config src/index.js",
-    "userCreate": "node src/commands.js createUser"
+
+    "rmmigration": "rmdir prisma/migrations",
+    "dbm": "npx prisma migrate dev --name init",
+    "dbr": "npm run rmmigration & npm run dbm",
+
+    "createUser": "node src/commands.js createUser",
+    "setNextMatches": "node src/commands.js setNextMatches",
+    "startGame": "node src/commands.js startGame"
   },
   "prisma": {
     "seed": "node prisma/seed.js"

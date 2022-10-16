@@ -1,5 +1,5 @@
-const kounde = {
-    username: "Joel Matip",
+export default {
+    username: "Jules Koundé",
     email: "kounde@gmail.com",
     password: "usefbuseyf7esgf7esf",
     positionPlayer: "df",
@@ -21,5 +21,3 @@ const kounde = {
     speed_sprint: 88,
     position:86
 }
-
-export default kounde

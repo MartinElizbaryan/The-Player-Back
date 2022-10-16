@@ -32,4 +32,29 @@ export const getAllTeamsDB = async ({ type="id", take, skip=0 }) => {
         error,
       }
     }
-  }
+}
+
+
+export const getAllTeamsIdDB = async ({ type="id", take, skip=0 }) => {
+    try {
+      const query = {
+        orderBy: {
+          [type]: "desc",
+        },
+        select: {
+          id: true
+        }
+      }
+      
+      const teams = await team.findMany(query)
+  
+      return {
+        teams,
+      }
+    } catch (error) {
+      console.log("teams/db.js", error)
+      return {
+        error,
+      }
+    }
+}

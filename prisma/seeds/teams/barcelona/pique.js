@@ -1,5 +1,5 @@
-const pique = {
-    username: "Virgil van Dijk",
+export default {
+    username: "Piqué",
     email: "pique@gmail.com",
     password: "aukguakwdkuawgdkuaw",
     positionPlayer: "df",
@@ -21,5 +21,3 @@ const pique = {
     speed_sprint: 91,
     position: 91
 }
-
-export default pique

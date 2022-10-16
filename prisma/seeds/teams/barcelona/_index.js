@@ -40,4 +40,4 @@ const barcelona = {
     },
 }
 
-export default liverpool
+export default barcelona

@@ -1,4 +1,4 @@
-const alba = {
+export default {
     username: "Andrew Robertson",
     email: "alba@gmail.com",
     password: "aukguakwdkuawgdkuaw",
@@ -21,5 +21,3 @@ const alba = {
     speed_sprint: 87,
     position: 90
 }
-
-export default alba

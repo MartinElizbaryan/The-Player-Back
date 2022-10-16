@@ -1,4 +1,4 @@
-const chilwell = {
+export default {
     username: "Andrew Robertson",
     email: "chilwell@gmail.com",
     password: "aukguakwdkuawgdkuaw",
@@ -21,5 +21,3 @@ const chilwell = {
     speed_sprint: 87,
     position: 90
 }
-
-export default chilwell

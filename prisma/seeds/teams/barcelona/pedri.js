@@ -1,6 +1,6 @@
-const pedri = {
+export default {
     username: "Thiago",
-    email: "thiago@gmail.com",
+    email: "pedri@gmail.com",
     password: "awdtfawghauwijajwuv",
     positionPlayer: "mf",
 
@@ -21,5 +21,3 @@ const pedri = {
     shot_long: 77,
     vision: 90,
 }
-
-export default pedri

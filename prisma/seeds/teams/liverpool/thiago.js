@@ -1,4 +1,4 @@
-const tiago = {
+export default {
     username: "Thiago",
     email: "thiago@gmail.com",
     password: "awdtfawghauwijajwuv",
@@ -21,5 +21,3 @@ const tiago = {
     shot_long: 77,
     vision: 88,
 }
-
-export default tiago
